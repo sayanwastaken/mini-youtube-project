@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="./images/YouTube-Icon-Full-Color-Logo.wine.svg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="youtube.css">
+  </head>
+  <body>
+    <div class="mainCont">
+      <div id="sideBar">
+        <div>
+          <span class="material-icons"> reorder </span>
+        </div>
+        <div>
+          <span class="material-icons"> home </span>
+          <p>Home</p>
+        </div>
+        <div>
+          <span class="material-icons"> explore </span>
+          <p>explore</p>
+        </div>
+        <div>
+          <span class="material-icons lib"> subscriptions </span>
+        </div>
+        <p class="description">subscriptions</p>
+        <div>
+          <span class="material-icons"> video_library </span>
+          <p>Library</p>
+        </div>
+      </div>
+      <div id="navbar">
+        <div class="logoDiv">
+          <img src="./images/YouTube-Icon-Full-Color-Logo.wine.svg" alt="" />
+          <h2>YouTube <sup>Mini</sup></h2>
+        </div>
+        <div class="searchDiv">
+          <input type="search" id="search" placeholder="Search" />
+          <button onclick="getdata()">
+            <span class="material-icons srcLogo"> search </span>
+          </button>
+        </div>
+        <div class="otherDiv">
+          <span class="material-icons"> video_call </span>
+          <span class="material-icons"> apps </span>
+          <span class="material-icons"> notifications </span>
+        </div>
+      </div>
+      <div id="mainContent">
+        <!-- <div>
+          <img src="https://i.ytimg.com/vi/ZYzbalQ6Lg8/hqdefault.jpg" alt="">
+          <p>spiderman lorem20</p>
+          <h5>channel</h5>
+        </div>
+        <div></div> -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="youtube.js"></script>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HCiLvG1l_JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<!-- https://youtube.googleapis.com/youtube/v3/searchmaxResults=25&q=surfing&key=[YOUR_API_KEY]  -->
+
+<!-- https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=spider&key=[YOUR_API_KEY] -->
+
+
+
+<!-- youtube api object example beleow -->
+
+
+<!-- etag: "QCsPDpDR6JmlRqz5XibFGMyUUOw"
+id: {kind: 'youtube#video', videoId: 'KXFmaE5B9E8'}
+kind: "youtube#searchResult"
+snippet:
+channelId: "UCjWs7BxyjO5SLqevxSmp4vQ"
+channelTitle: "Autocar India"
+description: "The Tesla Model 3 is the EV everyone wants. And Hormazd Sorabjee has driven it ahead of its India launch in 2022. Question is, does the Model 3 live up to the ..."
+liveBroadcastContent: "none"
+publishTime: "2021-10-15T07:15:00Z"
+publishedAt: "2021-10-15T07:15:00Z"
+thumbnails:
+default: {url: 'https://i.ytimg.com/vi/KXFmaE5B9E8/default.jpg', width: 120, height: 90}
+high: {url: 'https://i.ytimg.com/vi/KXFmaE5B9E8/hqdefault.jpg', width: 480, height: 360}
+medium: {url: 'https://i.ytimg.com/vi/KXFmaE5B9E8/mqdefault.jpg', width: 320, height: 180}
+[[Prototype]]: Object
+constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+__proto__: (...)
+get __proto__: ƒ __proto__()
+set __proto__: ƒ __proto__()
+title: "Tesla Model 3 India review - Happy Dussehra! | First Drive | Autocar India" -->
